@@ -130,10 +130,155 @@ p{
     background-position: 0 -300px;
     background-size: cover;
 }
+
+.selectionRow{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.muscleOption{
+    margin-left: 10vh;
+    margin-top: 5vh;
+    height: 30vh;
+    width: 25vh;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+}
+
+.muscleImg{
+    height: 50%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.muscleContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 0 0 20px 20px;
+    height: 50%;
+    width: 100%;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.musleOptionSelected{
+    border:2px solid #EF4A4A;
+}
+
+.muscleContentSelected{
+    background-color: #EF4A4A;
+    color: aliceblue;
+}
+
+#ABDOMINALS{
+    background-image: url(resources/abdominal.png);
+    background-size: cover;
+    background-position: 5px -20px;
+}
+
+#ABDUCTORS{
+    background-image: url(resources/abductors.png);
+    background-size: cover;
+    background-position: 0px -48px;
+}
+
+#ADDUCTORS{
+    background-image: url(resources/adductors.png);
+    background-size: cover;
+    background-position: 0px -48px;
+}
+
+#BICEPS{
+    background-image: url(resources/biceps.png);
+    background-size: cover;
+    background-position: -8px 0px;
+}
+
+#CALVES{
+    background-image: url(resources/calves.png);
+    background-size: cover;
+    background-position: -8px -50px;
+}
+
+#CHEST{
+    background-image: url(resources/chest.png);
+    background-size: cover;
+}
+
+#FOREARMS{
+    background-image: url(resources/forearm.png);
+    background-size: cover;
+}
+
+#GLUTES{
+    background-image: url(resources/glutes.png);
+    background-size: cover;
+    background-position: 8px 0px;
+
+}
+
+#HAMSTRINGS{
+    background-image: url(resources/hamstrings.png);
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+#LATS{
+    background-image: url(resources/Lats.png);
+    background-size: cover;
+    background-position: 0px -20px;
+}
+
+#LOWER{
+    background-image: url(resources/LowerBack.png);
+    background-size: cover;
+    background-position: 0px -20px;
+}
+
+#MIDDLE{
+    background-image: url(resources/middleBack.png);
+    background-size: cover;
+    background-position: 0px -20px;
+}
+
+#NECK{
+    background-image: url(resources/neck.png);
+    background-size: cover;
+    background-position: 17px 0px;
+}
+
+#QUADRICPES{
+    background-image: url(resources/quadriceps.png);
+    background-size: cover;
+}
+
+#TRAPS{
+    background-image: url(resources/traps.png);
+    background-size: cover;
+    background-position: 17px -50px;
+
+}
+#TRICEPS{
+    background-image: url(resources/triceps.png);
+    background-size: cover;
+    background-position: 5px -45px;
+
+}
+.plan{
+    margin-top: 10vh;
+    margin-right: 10vh;
+    color: aliceblue;
+
+}
 .end{
     height: 50vh;
     width: 100%;
     background-color: #343434;
+    margin-top: 5vh;
 }
 #made{
    padding-top: 5vh;
