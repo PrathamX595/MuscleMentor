@@ -1,7 +1,161 @@
-.transition-fade{
+/* .transition-fade{
     opacity: 1;
     transition: 500ms;
+    transform:  translateX(0);
+    transform-origin: left;
 }
 html.is-animating .transition-fade{
+    opacity: 1;
+    transform: translateX(100%);
+
+}
+html.is-leaving .transition-fade{
     opacity: 0;
+    transform: translateX(0);
+
+}
+html.is-rendering .transition-fade{
+    
+} */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #585858;
+}
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343434;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.icon{
+    
+    transform: scale(2.5);
+    color: #EF4A4A;
+}
+.logo{
+    margin: 0 2vh 0 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10vh;
+}
+.btnHolder{
+    height: max-content;
+    width: max-content;
+}
+.navOption{
+    color: #343434;
+    background-color: #EF4A4A;
+    border: 2px solid rgb(0, 0, 0);
+    height: 7vh;
+    min-width: 12vh;
+    max-width: max-content;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 3.5vh ;
+    margin: 0 5vh 0 5vh;
+}
+.homeImg{
+    height: 75vh;
+    width: 100%;
+    background-image: url("resources/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-his-upper-body-concept-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: self-end;
+}
+.title{
+    font-size: xx-large;
+    color: aliceblue;
+    position: absolute;
+    top: 13vh;
+    left: 8vh;
+    z-index: 0;
+}
+.start{
+    height: 10vh;
+    min-width: 20vh;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5vh;
+    font-size: large;
+    font-weight: bold;
+    max-width: max-content;
+    margin: 0 20vh 10vh 20vh ;
+}
+.facts{
+    width: 100%;
+    height: 20vh;
+    margin: 11vh 0 11vh 0;
+}
+p{
+    margin: 0;
+}
+.backImg{
+    height: 20vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10vh 10vh 0;
+    border: 3px solid black;
+    color: rgb(255, 255, 255);
+}
+
+#cover2{
+    display: flex;
+    justify-content: right;
+}
+
+#box1{
+    border-radius: 0 10vh 10vh 0;
+    background-image: url("resources/download.jpg");
+    background-position: 0 -200px;
+    background-size: cover;
+}
+#box2{
+    border-radius: 10vh 0 0 10vh;
+    background-image: url("resources/side-view-shot-fit-young-athletic-man-jumping-running.jpg");
+    background-position: 0 -125px;
+    background-size: cover;
+}
+#box3{
+    border-radius: 0 10vh 10vh 0;
+    background-image: url("resources/7\ Benefits\ of\ HIIT\ \(High\ intensity\ interval\ training\).jpg");
+    background-position: 0 -300px;
+    background-size: cover;
+}
+.end{
+    height: 50vh;
+    width: 100%;
+    background-color: #343434;
+}
+#made{
+   padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#link{
+    margin-left: 8px;
+    color: aliceblue;
+}
+.text{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.creds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    margin: 20vh;
+    transform: scale(4);
 }
