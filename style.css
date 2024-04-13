@@ -61,6 +61,11 @@ body{
     border-radius: 3.5vh ;
     margin: 0 5vh 0 5vh;
 }
+.fact{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
 .homeImg{
     height: 75vh;
     width: 100%;
@@ -303,4 +308,12 @@ p{
 .links{
     margin: 20vh;
     transform: scale(4);
+}
+.muscleOption:hover{
+    border: 2px solid #EF4A4A;
+}
+
+.muscleContent:hover {
+    background-color: #EF4A4A;
+    color: aliceblue;
 }

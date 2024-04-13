@@ -8,100 +8,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.8/swup.min.js" integrity="sha512-zarvzsuTnsmBdyGdtt3MSQYTkEBX9aGrG4P9RjNJXPmmNromygeUkZS4NOM6/Ht0O8cvzU0glG+FKULEMDgqbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
-<body>
-    <!-- <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Selection.html">Select</a></li>
-            <li><a href="/training.html">Train</a></li>
-        </ul>
-    </nav> -->
+<body >
     <header class="nav">
         <div class="logo">
             <i class="fa-solid fa-dumbbell icon"></i>
         </div>
         <div class="btnHolder">
-            <button class="navOption">Home</button>
-            <button class="navOption">Start</button>
-            <button class="navOption">About</button>
+            <button class="navOption" id="default">Home</button>
+            <button class="navOption" id="go1">Start</button>
+            <button class="navOption" id="abt">About</button>
         </div>
     </header>
 
-    <main id="swup" class="transition-fade">
-        <div class="selectionRow">
-            <div class="muscleOption">
-                <div class="muscleImg" id="ABDOMINALS"></div>
-                <div class="muscleContent">ABDOMINALS</div>
+    <main id="swup" class="transition-fade mainElement">
+        <div class="holder">
+            <div class="selectionRow">
+                <div class="muscleOption" id="abdominals">
+                    <div class="muscleImg" id="ABDOMINALS"></div>
+                    <div class="muscleContent">ABDOMINALS</div>
+                </div>
+                <div class="muscleOption" id="abductors">
+                    <div class="muscleImg" id="ABDUCTORS"></div>
+                    <div class="muscleContent">ABDUCTORS</div>
+                </div>
+                <div class="muscleOption" id="adductors">
+                    <div class="muscleImg" id="ADDUCTORS"></div>
+                    <div class="muscleContent">ADDUCTORS</div>
+                </div>
+                <div class="muscleOption" id="biceps">
+                    <div class="muscleImg" id="BICEPS"></div>
+                    <div class="muscleContent">BICEPS</div>
+                </div>
             </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="ABDUCTORS"></div>
-                <div class="muscleContent">ABDUCTORS</div>
+            <div class="selectionRow">
+                <div class="muscleOption" id="calves">
+                    <div class="muscleImg" id="CALVES"></div>
+                    <div class="muscleContent">CALVES</div>
+                </div>
+                <div class="muscleOption" id="chest">
+                    <div class="muscleImg" id="CHEST"></div>
+                    <div class="muscleContent">CHEST</div>
+                </div>
+                <div class="muscleOption" id="forearms">
+                    <div class="muscleImg" id="FOREARMS"></div>
+                    <div class="muscleContent">FOREARMS</div>
+                </div>
+                <div class="muscleOption" id="glutes">
+                    <div class="muscleImg" id="GLUTES"></div>
+                    <div class="muscleContent">GLUTES</div>
+                </div>
             </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="ADDUCTORS"></div>
-                <div class="muscleContent">ADDUCTORS</div>
+            <div class="selectionRow">
+                <div class="muscleOption" id="hamstrings">
+                    <div class="muscleImg" id="HAMSTRINGS"></div>
+                    <div class="muscleContent">HAMSTRINGS</div>
+                </div>
+                <div class="muscleOption" id="lats">
+                    <div class="muscleImg" id="LATS"></div>
+                    <div class="muscleContent">LATS</div>
+                </div>
+                <div class="muscleOption" id="lower_back">
+                    <div class="muscleImg" id="LOWER"></div>
+                    <div class="muscleContent">LOWER BACK</div>
+                </div>
+                <div class="muscleOption" id="middle_back">
+                    <div class="muscleImg" id="MIDDLE"></div>
+                    <div class="muscleContent">MIDDLE BACK</div>
+                </div>
             </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="BICEPS"></div>
-                <div class="muscleContent">BICEPS</div>
+            <div class="selectionRow">
+                <div class="muscleOption" id="neck">
+                    <div class="muscleImg" id="NECK"></div>
+                    <div class="muscleContent">NECK</div>
+                </div>
+                <div class="muscleOption" id="quadriceps">
+                    <div class="muscleImg" id="QUADRICPES"></div>
+                    <div class="muscleContent">QUADRICPES</div>
+                </div>
+                <div class="muscleOption" id="traps">
+                    <div class="muscleImg" id="TRAPS"></div>
+                    <div class="muscleContent">TRAPS</div>
+                </div>
+                <div class="muscleOption" id="triceps">
+                    <div class="muscleImg" id="TRICEPS"></div>
+                    <div class="muscleContent">TRICEPS</div>
+                </div>
             </div>
-        </div>
-        <div class="selectionRow">
-            <div class="muscleOption">
-                <div class="muscleImg" id="CALVES"></div>
-                <div class="muscleContent">CALVES</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="CHEST"></div>
-                <div class="muscleContent">CHEST</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="FOREARMS"></div>
-                <div class="muscleContent">FOREARMS</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="GLUTES"></div>
-                <div class="muscleContent">GLUTES</div>
-            </div>
-        </div>
-        <div class="selectionRow">
-            <div class="muscleOption">
-                <div class="muscleImg" id="HAMSTRINGS"></div>
-                <div class="muscleContent">HAMSTRINGS</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="LATS"></div>
-                <div class="muscleContent">LATS</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="LOWER"></div>
-                <div class="muscleContent">LOWER BACK</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="MIDDLE"></div>
-                <div class="muscleContent">MIDDLE BACK</div>
-            </div>
-        </div>
-        <div class="selectionRow">
-            <div class="muscleOption">
-                <div class="muscleImg" id="NECK"></div>
-                <div class="muscleContent">NECK</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="QUADRICPES"></div>
-                <div class="muscleContent">QUADRICPES</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="TRAPS"></div>
-                <div class="muscleContent">TRAPS</div>
-            </div>
-            <div class="muscleOption">
-                <div class="muscleImg" id="TRICEPS"></div>
-                <div class="muscleContent">TRICEPS</div>
-            </div>
-        </div>
-        <div class="selectionRow">
-            <button class="navOption start plan">Plan</button>
         </div>
     </main>
 
@@ -117,7 +109,7 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="scriptSelect.js"></script>
     <script src="facts.js"></script>
 </body>
 </html>
