@@ -364,7 +364,6 @@ p{
 .midTimer{
     width: 100%;
     height: 20vh;
-    /* background-color: blanchedalmond; */
     background-image: linear-gradient(circle, aliceblue, rgb(172, 172, 240));
     border-radius: 0 0 25px 25px;
     background-color: #EF4A4A;
@@ -378,7 +377,6 @@ p{
 .midTimer1{
     width: 100%;
     height: 20vh;
-    /* background-color: blanchedalmond; */
     background-image: linear-gradient(circle, aliceblue, rgb(172, 172, 240));
     background-color: #EF4A4A;
     color: aliceblue;
@@ -436,8 +434,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: visible;
-    position: static;
+    visibility: hidden;
+    position: absolute;
 }
 .excerciseCard1{
     border: 2px solid aliceblue;
@@ -462,7 +460,7 @@ p{
     margin-top: 5vh;
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     visibility: inherit;
     position: inherit;
 }

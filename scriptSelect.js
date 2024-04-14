@@ -15,6 +15,7 @@ const holder2 = document.querySelector(".holder2");
 const holder3 = document.querySelector(".holder3");
 const mainCard = document.querySelector(".excerciseCard1");
 const explaination = document.querySelector(".explaination");
+const btn = document.querySelector("#back");
 // content.innerHTML = "type:haha <br> instruction: haha <br> equipment:woo shang bang";
 let globalResult;
 
@@ -59,6 +60,7 @@ btn2.addEventListener('click', () => {
 
 cards.forEach((card) => {
     card.addEventListener('click', async () => {
+        window.scrollTo(0, 0);
         let muscle = card.id;
         holder.style.visibility = "hidden";
         holder.style.position = "absolute";
@@ -97,6 +99,7 @@ exerciseCards.forEach((exerciseCard) => {
         timeClass.remove("newTime");
     })
     exerciseCard.addEventListener("click", ()=>{
+        window.scrollTo(0, 0);
         holder2.style.visibility = "hidden";
         holder2.style.position = "absolute";
         holder3.style.visibility = "visible";
@@ -104,5 +107,18 @@ exerciseCards.forEach((exerciseCard) => {
         excerciseName[mainCard.id].innerHTML = excerciseName[exerciseCard.id].innerHTML;
         excerciseTime[mainCard.id].innerHTML = excerciseTime[exerciseCard.id].innerHTML;
         explaination.innerHTML = excerciseContent[exerciseCard.id].innerHTML;
+        let classes = excerciseContent[mainCard.id].classList;
+        let classes2 = excerciseTime[mainCard.id].classList;
+        classes.add("lowerExplain1");
+        classes.remove("lowerExplain");
+        classes2.add("midTimer1");
+        classes2.remove("midTimer");
     })
+})
+
+btn.addEventListener("click", ()=>{
+    holder2.style.visibility = "visible";
+    holder2.style.position = "static";
+    holder3.style.visibility = "hidden";
+    holder3.style.position = "absolute";
 })
