@@ -142,6 +142,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: inherit;
+    position: inherit;
 }
 .muscleOption{
     margin-left: 10vh;
@@ -317,3 +319,155 @@ p{
     background-color: #EF4A4A;
     color: aliceblue;
 }
+.holder{
+    visibility: visible;
+    position: static;
+}
+.holder2{
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.excerciseCard{
+    border: 2px solid aliceblue;
+    height: 30vh;
+    width: 45vh;
+    position: inherit;
+    visibility: inherit;
+    border-radius: 25px;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+
+.inExcer{
+    border: 2px solid #EF4A4A;
+}
+
+.upperName{
+    width: 100%;
+    height: 10vh;
+    border-radius: 25px 25px 0 0 ;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+.classColor{
+    background-color: #EF4A4A;
+    color: aliceblue;
+}
+
+.midTimer{
+    width: 100%;
+    height: 20vh;
+    /* background-color: blanchedalmond; */
+    background-image: linear-gradient(circle, aliceblue, rgb(172, 172, 240));
+    border-radius: 0 0 25px 25px;
+    background-color: #EF4A4A;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.midTimer1{
+    width: 100%;
+    height: 20vh;
+    /* background-color: blanchedalmond; */
+    background-image: linear-gradient(circle, aliceblue, rgb(172, 172, 240));
+    background-color: #EF4A4A;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lowerExplain{
+    width: 0;
+    height: 0;
+    background-color: aliceblue;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0 0 0;
+    border-radius: 0 0 25px 25px;
+    font-size: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lowerExplain1{
+    width: 45vh;
+    height: 28vh;
+    background-color: aliceblue;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0 0 0;
+    border-radius: 0 0 25px 25px;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.iconic{
+    transform: scale(10);
+}
+
+.inIconic{
+    color: aliceblue;
+}
+
+.newLable{
+    background-color: #EF4A4A;
+    color: #EF4A4A;
+}
+
+.newTime{
+    background-color: aliceblue;
+    color: #EF4A4A;
+}
+.holder3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    position: static;
+}
+.excerciseCard1{
+    border: 2px solid aliceblue;
+    height: 60vh;
+    width: 45vh;
+    position: inherit;
+    visibility: inherit;
+    border-radius: 25px;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+.explaination{
+    height: 60vh;
+    width: 98vh;
+    padding-left: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 10vh;
+    margin-top: 5vh;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    visibility: inherit;
+    position: inherit;
+}
+
+.sml{
+    transform: scale(0.5);
+}
+

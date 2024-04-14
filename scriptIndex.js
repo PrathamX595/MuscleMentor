@@ -8,7 +8,7 @@ const btn2 = document.querySelector('#default');
 const btn3 = document.querySelector('#abt');
 
 btn1.addEventListener('click', () => {
-  window.open("Selection.html");
+  window.open("Selection.html", "_self");
 })
 
 btn3.addEventListener('click', () => {
@@ -21,10 +21,8 @@ btn2.addEventListener('click', () => {
 })
 
 btn.addEventListener('click', () => {
-  window.open("Selection.html");
+  window.open("Selection.html", "_self");
 })
-
-console.log(p)
 
 for(i = 0; i < 3; i++){
   const random = Math.floor(Math.random() * facts.length);
@@ -33,4 +31,3 @@ for(i = 0; i < 3; i++){
   console.log(facts[random]);
   console.log(i);
 }
-
