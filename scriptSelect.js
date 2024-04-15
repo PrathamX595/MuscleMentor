@@ -15,6 +15,8 @@ const holder2 = document.querySelector(".holder2");
 const holder3 = document.querySelector(".holder3");
 const mainCard = document.querySelector(".excerciseCard1");
 const explaination = document.querySelector(".explaination");
+const Selection2 = document.querySelector(".selectionRow2");
+const lowimg = document.querySelectorAll(".lowImg");
 const btn = document.querySelector("#back");
 // content.innerHTML = "type:haha <br> instruction: haha <br> equipment:woo shang bang";
 let globalResult;
@@ -64,8 +66,11 @@ cards.forEach((card) => {
         let muscle = card.id;
         holder.style.visibility = "hidden";
         holder.style.position = "absolute";
-        let explain = await getData(muscle);
-        console.log(explain);
+        Selection2.style.visibility = "visible";
+        Selection2.style.position = "static";
+        await getData(muscle);
+        Selection2.style.visibility = "hidden";
+        Selection2.style.position = "absolute";
         holder2.style.visibility = "visible";
         holder2.style.position = "static";
     } )   
@@ -78,10 +83,6 @@ exerciseCards.forEach((exerciseCard) => {
         classes.add("inExcer");
         let classesUnder = excerciseName[exerciseCard.id].classList;
         classesUnder.add("classColor");
-        let iconClass = icon[exerciseCard.id].classList;
-        iconClass.add("inIconic");
-        let lableClass = excerciseContent[exerciseCard.id].classList;
-        lableClass.add("newLable");
         let timeClass = excerciseTime[exerciseCard.id].classList;
         timeClass.add("newTime");
 
